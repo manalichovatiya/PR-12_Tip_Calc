@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+              <!-- Bill Input Section -->
+            <div class="box">
+                <label for="bill" class="bill">Bill</label>
+                <div class="input-box">
+                    <span>₹</span>
+                    <input type="number" value="" id="bill" class="val" onfocus="remove_amount()">
+                </div>
+            </div>
+             <!-- Tip Amount Section -->
+            <div class="box">
+                <span class="lbl">Tip</span>
+                <span class="val" id="tip_amount">₹0</span>
+            </div><hr>
+            <!-- Total Amount Section -->
+            <div class="box">
+                <span class="lbl">Total Amount</span>
+                <span class="val" id="total_amount">₹0</span>
+            </div>
+        </section>
+        <section>
+              <!-- Tip Percentage Range Input -->
+            <div class="box">
+                <label for="tip" class="lbl">Tip%</label>
+                <div class="val" id="tip_percent">0</div>
+            </div>
+            <input type="range" min="1" max="80" id="tip" value="0">
+            <!-- Number of People Range Input -->
+            <div class="box">
+                <label class="lbl">No Of People</label>
+                <span id="people_num" class="val">0</span>
+            </div>
+            <input type="range"  id="no_of_people" min="1" max="10" value="1">
+        </section>
+        <section>
+            <!-- Tip Per Person Section -->
+            <div class="box">
+                <span class="lbl">Tip Per Person</span>
+                <div class="val" id="tip_per_person">₹0</div>
+            </div>
+             <!-- Total Per Person Section -->
+            <div class="box">
+                <span class="lbl">Total per person</span>
+                <span class="val" id="total_per_person">₹0</span>
+            </div>
+        </section>
+    </div>
+    
+    <script src="tip.js"></script> 
+</body>
+</html>
